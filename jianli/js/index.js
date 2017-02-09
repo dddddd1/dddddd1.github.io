@@ -55,7 +55,7 @@
 				});
 			});	
 			$("aside a").eq(0).addClass("selected").siblings().removeClass("selected");
-			console.log("Hi! 朋友，感谢您阅读简历代码。\n  如果您有什么建议或者想入门前端，欢迎您加入我们,我们互相学习，共同进步^_^ \n %c QQ小群(http://t.cn/RtlQbTq)","color: red");
+			console.log("Hi! 朋友，感谢您阅读简历代码。\n  如果您有什么建议或者想入门前端，欢迎您加入我们,我们互相学习，共同进步^_^ \n %c ","color: red");
 		},
 		afterLoad: function(anchorLink,index){
 			if(index==1){
@@ -167,10 +167,10 @@
 		$("#header_p2").html("个人简历");	
 	});
 //顶部导航取消
-	$("header nav a:not(':first')").click(function(){
+	/*$("header nav a:not(':first')").click(function(){
 		alert("正在努力建设中...请稍等");
 		return false;
-	});
+	});*/
 //侧边导航文字切换
 	$("aside a").hover(function(){
 		$(this).find("b").fadeToggle(200,"easeInOutCubic");
